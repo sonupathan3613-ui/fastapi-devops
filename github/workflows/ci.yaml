@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t your-dockerhub-username/fastapi-devops:latest ./app 
+        docker build -t mohammadshareef3613/fastapi-devops:v1 ./app 

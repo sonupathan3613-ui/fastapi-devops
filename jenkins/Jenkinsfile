@@ -10,7 +10,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("mohammadshareef3613/fastapi-devops:latest")
+                    docker.build("mohammadshareef3613/fastapi-devops:v1")
                 }
             }
         }
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
-                        docker.image("mohammadshareef3613/fastapi-devops:latest").push()
+                        docker.image("mohammadshareef3613/fastapi-devops:v1").push()
                     }
                 }
             }
