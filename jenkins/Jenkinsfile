@@ -10,7 +10,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
- sh 'docker build -t mohammadshareef3613/fastapi-devops:v1 -f Dockerfile .'
+ sh 'docker build -t mohammadshareef3613/fastapi-devops:v1 -f app/Dockerfile .'
                     
                 }
             }
