@@ -38,3 +38,6 @@ This project demonstrates a full DevOps pipeline with FastAPI, Docker, Kubernete
    docker build -t fastapi-devops ./app
 kubectl apply -f k8s/
 terraform init && terraform apply
+# if data not shown website use this command in ubuntu for test docker image
+curl http://localhost:8000
+{"message":"Hello from FastAPI DevOps!"}mohammadshareef
